@@ -5,65 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
-  </head>
-  <body bgcolor="EFFEFF">
-    <h1 class="header">
-      M Y &nbsp;&nbsp;P O R T F O L I O
-      <nav
-        style="
-          font-size: 32px;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        "
-      >
-        <a href="index.html">Home</a>
-        |
-        <a href="experience.html">Experience</a>
-        |
-        <a href="contact.html">Contact</a>
-      </nav>
-    </h1>
-    <img
-      src="images/floppa.png"
-      style="
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        border: 20px;
-        border-radius: 20px;
-      "
-      width="256px"
-      height="256px"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <h3 style="text-decoration: underline">Hello My name is Pubest.</h3>
-    <p
-      style="
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      "
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body bgcolor="FFFFFF">
+    <!--Nav-->
+    <div
+      class="d-none d-sm-flex d-flex align-items-center bg-light text-dark p-2 gap-4"
+      style="height: 60px"
     >
-      You can call me <br /><br />
-      I'm 2nd year CPE student in CMU
-      <br />
-      <br />
-    </p>
-    <h3 style="font-size: 24px; text-decoration: underline dashed crimson">
-      About ME!
-    </h3>
-    <div class="skill-container">
-      <h3 class="skill-header">Programming</h3>
-      <p class="subskill">
-        C++&nbsp;<a style="text-decoration: line-through"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+      <h1
+        class="d-none d-sm-block"
+        style="font-weight: 700; letter-spacing: 0.3em"
+      >
+        PUBEST
+      </h1>
+      <button class="btn btn-dark ms-auto d-none d-sm-block">
+        <a href="index.html" class="text-light" style="text-decoration: none"
+          >Home</a
         >
-        Intermediate<br />HTML&nbsp;<a style="text-decoration: line-through"
-          >&nbsp;&nbsp;&nbsp;</a
+      </button>
+      <button class="d-none d-sm-block btn btn-outline-dark">
+        <a
+          href="experience.html"
+          class="text-dark"
+          style="text-decoration: none"
+          >Experience</a
         >
-        Beginner<br />CSS&nbsp;<a style="text-decoration: line-through"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+      </button>
+      <button class="btn btn-outline-dark d-none d-sm-block">
+        <a href="gallery.html" class="text-dark" style="text-decoration: none"
+          >Gallery</a
         >
-        Beginner<br />
-      </p>
+      </button>
+      <button class="d-none d-sm-block btn btn-outline-dark">
+        <a href="contact.html" class="text-dark" style="text-decoration: none"
+          >Contact</a
+        >
+      </button>
+    </div>
+
+    <div
+      class="d-flex d-sm-none align-items-center bg-light text-dark"
+      style="height: 60px"
+    >
+      <div
+        class="d-flex border justify-content-center align-items-center bg-dark border-dark"
+        style="width: 25%; height: 100%"
+      >
+        <a href="index.html" class="text-light" style="text-decoration: none"
+          >Home</a
+        >
+      </div>
+      <div
+        class="border d-flex justify-content-center align-items-center border-secondary"
+        style="width: 25%; height: 100%"
+      >
+        <a
+          href="experience.html"
+          class="text-secondary"
+          style="text-decoration: none"
+          >Experience</a
+        >
+      </div>
+      <div
+        class="border d-flex justify-content-center align-items-center border-secondary"
+        style="width: 25%; height: 100%"
+      >
+        <a
+          href="gallery.html"
+          class="text-secondary"
+          style="text-decoration: none"
+          >Gallery</a
+        >
+      </div>
+      <div
+        class="border d-flex justify-content-center align-items-center border-secondary"
+        style="width: 25%; height: 100%"
+      >
+        <a
+          href="contact.html"
+          class="text-secondary"
+          style="text-decoration: none"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <!--End Nav-->
+    <!--Profile-->
+    <div
+      class="px-2 py-4 justify-content-center align-items-center mx-auto shadow-lg my-4 rounded-3"
+      style="max-width: 760px"
+    >
+      <div class="d-flex align-items-center">
+        <div class="mx-auto">
+          <img
+            src="images/floppa.png"
+            width="160rem"
+            class="rounded-circle me-4 ms-4"
+          />
+        </div>
+        <div class="me-4 d-none d-sm-block">
+          <div class="font-monospace fw-bolder fs-1 my-2">PUBEST RUENGKUM</div>
+          <div class="text-muted me-2">
+            Hello my name is Pubest Ruengkum. I'm a 2nd year Computer
+            Engineering student in Chaingmai University. Appreciate your visit.
+          </div>
+        </div>
+      </div>
+      <div
+        class="font-monospace fw-bolder mb-2 mt-4 d-sm-none mx-auto display-3"
+        style="max-width: fit-content"
+      >
+        PUBEST RUENGKUM
+      </div>
+    </div>
+    <!--End Profile-->
+    <p class="text-center font-monospace subhead_underline">SKILLS</p>
+    <!--skills-->
+
+    <div class="d-block d-sm-none">
+      <div
+        class="my-1 mx-auto border rounded-circle p-2 shadow-lg border-light"
+        style="max-width: fit-content"
+      >
+        <img src="images/cpp.png" width="128rem" />
+      </div>
+
+      <div
+        class="my-1 mx-auto border rounded-circle p-2 shadow-lg border-light"
+        style="max-width: fit-content"
+      >
+        <img src="images/csharp.png" width="128rem" />
+      </div>
+
+      <div
+        class="my-1 mx-auto border rounded-circle p-2 shadow-lg border-light"
+        style="max-width: fit-content"
+      >
+        <img src="images/HTML5_logo_and_wordmark.svg.png" width="128rem" />
+      </div>
+      <div
+        class="my-1 mx-auto border rounded-circle p-2 shadow-lg border-light"
+        style="max-width: fit-content"
+      >
+        <img src="images/css3-logo.png" width="128rem" height="128rem" />
+      </div>
+      <div
+        class="my-1 mx-auto border rounded-circle p-2 shadow-lg border-light"
+        style="max-width: fit-content"
+      >
+        <img src="images/Bootstrap_logo.png" width="128rem" height="128rem" />
+      </div>
+    </div>
+
+    <div class="mx-auto p-1 d-none d-sm-block" style="max-width: 900px">
+      <div
+        class="border d-flex align-items-center gap-4 my-4 rounded-pill shadow-sm"
+        style="max-width: 600px"
+      >
+        <div><img src="images/cpp.png" width="128rem" class="m-sm-3" /></div>
+        <div class="d-none d-sm-block">
+          <p class="fs-4 fw-bold">C++</p>
+          <p class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+            animi, ipsum veritatis minus praesentium pariatur ullam error maxime
+            quaerat ex.
+          </p>
+        </div>
+      </div>
+      <div
+        class="border d-flex align-items-center gap-4 my-4 rounded-pill shadow-sm ms-auto"
+        style="max-width: 600px"
+      >
+        <div class="d-none d-sm-block">
+          <p class="text-end fs-4 fw-bold">C#</p>
+          <p style="text-align: end" class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+            animi, ipsum veritatis minus praesentium pariatur ullam error maxime
+            quaerat ex.
+          </p>
+        </div>
+        <img src="images/csharp.png" width="128rem" class="m-sm-3" />
+      </div>
+
+      <div
+        class="border d-flex align-items-center gap-4 my-4 rounded-pill shadow-sm"
+        style="max-width: 600px"
+      >
+        <img
+          src="images/HTML5_logo_and_wordmark.svg.png"
+          width="128rem"
+          class="m-sm-3"
+        />
+        <div class="d-none d-sm-block">
+          <p class="fs-4 fw-bold">HTML</p>
+          <p class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+            animi, ipsum veritatis minus praesentium pariatur ullam error maxime
+            quaerat ex.
+          </p>
+        </div>
+      </div>
+      <div
+        class="border d-flex align-items-center gap-4 my-4 rounded-pill shadow-sm ms-auto"
+        style="max-width: 600px"
+      >
+        <div class="d-none d-sm-block">
+          <p class="text-end fs-4 fw-bold">CSS</p>
+          <p style="text-align: end" class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+            animi, ipsum veritatis minus praesentium pariatur ullam error maxime
+            quaerat ex.
+          </p>
+        </div>
+        <img
+          src="images/css3-logo.png"
+          width="128rem"
+          height="128rem"
+          class="m-sm-3"
+        />
+      </div>
+      <div
+        class="border d-flex align-items-center gap-4 my-4 rounded-pill shadow-sm"
+        style="max-width: 600px"
+      >
+        <img
+          src="images/Bootstrap_logo.png"
+          width="128rem"
+          height="128rem"
+          class="m-sm-3"
+        />
+        <div class="d-none d-sm-block">
+          <p class="fs-4 fw-bold my-2">BOOTSTRAP</p>
+          <p class="text-muted">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+            animi, ipsum veritatis minus praesentium pariatur ullam error maxime
+            quaerat ex.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

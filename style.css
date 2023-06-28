@@ -21,7 +21,6 @@ h3 {
 }
 
 .header {
-  font-size: 64px;
   font: bold;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
@@ -29,4 +28,11 @@ h3 {
 
 .subskill {
   font-weight: 500;
+}
+
+.subhead_underline {
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: underline black 1.5px;
+  text-underline-offset: 7px;
 }
